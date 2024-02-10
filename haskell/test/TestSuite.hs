@@ -3,6 +3,7 @@ import MovingZerosTest
 import PickPeakTest
 import System.Exit
 import Test.HUnit
+import TheLostBeginningTest
 
 main :: IO ()
 main = do
@@ -11,7 +12,8 @@ main = do
       TestList
         [ isbn10Tests,
           pickPeakTests,
-          movingZerosTests
+          movingZerosTests,
+          lostBeginningTests
         ]
   if errors > 0 || failures > 0
     then exitFailure
