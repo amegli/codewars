@@ -1,3 +1,4 @@
+import Befunge93Test
 import ISBN10Test
 import MovingZerosTest
 import PickPeakTest
@@ -13,7 +14,8 @@ main = do
         [ isbn10Tests,
           pickPeakTests,
           movingZerosTests,
-          lostBeginningTests
+          lostBeginningTests,
+          befunge93Tests
         ]
   if errors > 0 || failures > 0
     then exitFailure
